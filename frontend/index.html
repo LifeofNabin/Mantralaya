@@ -5,37 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Company Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+  <script defer src="js/include.js"></script> <!-- ✅ NEW SCRIPT -->
 </head>
 <body>
 
   <!-- Main Wrapper with Background -->
   <div class="bg-wrapper">
 
-    <!-- Overlay (optional for dark effect) -->
+    <!-- Overlay -->
     <div class="overlay"></div>
 
-    <!-- Navigation -->
-    
-<header class="navbar">
-  <div class="logo">
-    <img src="assets/images/logo.png" alt="Company Logo" />
-  </div>
-
-  <!-- Hamburger Icon -->
-  
-
-  <!-- Navigation Links -->
-  <nav class="nav-links" id="navLinks">
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Our Team</a>
-    <a href="#">Stories</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="hamburger" id="hamburger">&#9776;</div>
-</header>
-
-
+    <!-- ✅ Shared Navbar -->
+    <div data-include="navbar/nav.html"></div>
 
     <!-- Hero Section -->
     <main class="hero">
