@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="logo-container">
         <img src="/assets/images/logo.png" alt="Logo" className="logo-img" />
-        <h1 className="logo-text">Nuvyxis</h1>
+        <h1 className="logo-text">NuvyXis</h1>
       </div>
 
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
