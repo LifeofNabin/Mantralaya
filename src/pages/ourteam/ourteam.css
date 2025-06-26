@@ -1,0 +1,25 @@
+.ourteam {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.ourteam h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #2e7d32; /* Optional green theme */
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

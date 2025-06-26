@@ -1,0 +1,9 @@
+.service-detail {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f0f5ff;
+  color: #333;
+}
+.service-detail h2 {
+  margin-bottom: 1rem;
+}
