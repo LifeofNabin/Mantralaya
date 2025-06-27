@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ContactResponseForm {
+public class ContactFormResponse {
     private String status;
 
     private String message;
