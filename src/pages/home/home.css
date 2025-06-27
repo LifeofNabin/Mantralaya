@@ -1,0 +1,28 @@
+.hero {
+  /* background-image: url('/public/assets/images/bg.png'); */
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:blue;
+  background-color: blanchedalmond;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: blueviolet;
+}
+
+.hook {
+    color: aqua;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 40%/30%;
+}
