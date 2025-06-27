@@ -8,10 +8,14 @@ export default function Home() {
         <h1>We help businesses grow with modern technology.</h1>
         <p>Innovative solutions. Expert teams. Global impact.</p>
         <a href="/services" className="btn">Explore Services</a>
+
+
+        <div className="callbtn">
+          <button className='hook'>Book a  call</button> 
+          
+          </div>
       </section>
-      <section>
-        We are good at what we do.
-      </section>
+      
     </div>
   );
 }
