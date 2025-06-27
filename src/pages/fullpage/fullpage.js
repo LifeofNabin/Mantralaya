@@ -1,4 +1,3 @@
-// src/pages/fullpage/fullpage.js
 import React from 'react';
 import Home from '../home/home';
 import Services from '../services/services';
@@ -11,15 +10,12 @@ export default function FullPage() {
       <section id="home">
         <Home />
       </section>
-
       <section id="services">
         <Services />
       </section>
-
       <section id="ourteam">
         <OurTeam />
       </section>
-
       <section id="contact">
         <Contact />
       </section>
