@@ -17,4 +17,11 @@ public class ContactFormResponse {
 
     private LocalDateTime timestamp;
 
+    public ContactFormResponse(String status, String message, String referenceId) {
+        this.status = status;
+        this.message = message;
+        this.referenceId = referenceId;
+        this.timestamp = LocalDateTime.now();
+    }
+
 }
