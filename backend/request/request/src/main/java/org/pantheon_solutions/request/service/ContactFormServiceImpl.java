@@ -30,7 +30,8 @@ public class ContactFormServiceImpl implements ContactFormService {
         //Rate limiting check
         if(isRateLimited(request.getEmail())){
             return new ContactFormResponse("ERROR",
-                    "To many submissions. Please try again later.",null);
+                    "To many submissions. Please try again later.",
+                    null);
         }
 
         // Generate reference ID
