@@ -10,9 +10,14 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="logo-container">
-        <img src="/assets/images/logo.png" alt="Logo" className="logo-img" />
-        <h1 className="logo-text">NuvyXis</h1>
-      </div>
+  <Link to="/" className="logo-link" onClick={closeMenu}>
+    <img src="/assets/images/logo.png" alt="Logo" className="logo-img" />
+    <h1 className="logo-text">NuvyXis</h1>
+  </Link>
+</div>
+
+
+      
 
       <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <Link smooth to="/#home" onClick={closeMenu}>Home</Link>

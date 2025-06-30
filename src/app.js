@@ -11,6 +11,7 @@ import Contact from './pages/contact/contact';
 import Codeservice from './pages/servicedetail/code/codeservice';
 import Capitalservice from './pages/servicedetail/capital/capitalservice';
 import Creationservice from './pages/servicedetail/creation/creationservice';
+import Schedule from './pages/schedule/call';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
           <Route path="/services/code" element={<Codeservice />} />
           <Route path="/services/capital" element={<Capitalservice />} />
           <Route path="/services/creation" element={<Creationservice />} />
+
+          <Route path="/schedule-call" element={<Schedule />} />
         </Routes>
       </div>
       <Footer />

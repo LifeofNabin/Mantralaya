@@ -1,8 +1,11 @@
 import React from 'react';
 import './contact.css';
+import BookCall from '../../components/bookcall/bookcall';
 
 export default function Contact() {
   return (
+
+
     <section className="contact">
       <h2>Contact Us</h2>
       <div className="locations">
@@ -26,6 +29,13 @@ export default function Contact() {
         <textarea placeholder="Your message..." rows="5" required />
         <button type="submit">Send Message</button>
       </form>
+
+
+
+{/* Add this to your nav links */}
+          <div> 
+            <BookCall /> 
+          </div>
     </section>
   );
 }

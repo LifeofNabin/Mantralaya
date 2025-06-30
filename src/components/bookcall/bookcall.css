@@ -1,0 +1,20 @@
+.book-call-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3a86ff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 1px 2px 3px 4px;
+}
+
+.book-call-btn:hover {
+  background-color: #2667cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import BookCall from '../../components/bookcall/bookcall';
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
 
 
         <div className="callbtn">
-          <button className='hook'>Book a  call</button> 
+          <button className='hook'><BookCall /> </button> 
           
           </div>
       </section>
