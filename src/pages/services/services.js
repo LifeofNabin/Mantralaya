@@ -8,9 +8,12 @@ export default function Services() {
       <h2>Our Services</h2>
       <div className="services-grid">
         <Link to="/services/code" className="card">
-          <img src="/assets/icons/tech.png" alt="Tech Icon" className="card-icon" />
-          Tech Work
-        </Link>
+  <img src="/assets/icons/tech.png" alt="Tech Icon" className="card-icon" />
+  <h3>Tech Work</h3>
+  <p>Web and mobile app development</p>
+</Link>
+
+        
         <Link to="/services/capital" className="card">
           <img src="/assets/icons/finance.png" alt="Finance Icon" className="card-icon" />
           Finance Work

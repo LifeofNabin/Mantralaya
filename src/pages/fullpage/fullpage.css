@@ -1,0 +1,210 @@
+.fullpage-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f1f1f1;
+  background-color: #121212;
+  line-height: 1.6;
+}
+
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 800px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hero-overlay p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #dcdcdc;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #00c896;
+  color: #000;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #00e0aa;
+  transform: scale(1.05);
+}
+
+/* WHAT WE DO */
+.what-we-do {
+  padding: 4rem 2rem;
+  background: #181818;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.service-card {
+  background: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0, 255, 180, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  color: #00c896;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* WHY CHOOSE US */
+.why-choose-us {
+  padding: 4rem 2rem;
+  background: #141414;
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.why-choose-us ul {
+  max-width: 800px;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+  color: #d1d1d1;
+}
+
+.why-choose-us li {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.why-choose-us li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 4rem 2rem;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 20px;
+  max-width: 300px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  text-align: left;
+}
+
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #e0e0e0;
+}
+
+.testimonial-card span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+/* BOOK A CALL */
+.book-call {
+  padding: 4rem 2rem;
+  background: #101010;
+  text-align: center;
+}
+
+.book-call h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00c896;
+}
+
+.book-call p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

@@ -24,6 +24,8 @@ export default function Navbar() {
         <Link to="/services" onClick={closeMenu}>Services</Link>
         <Link to="/ourteam" onClick={closeMenu}>Our Team</Link>
         <Link to="/contact" onClick={closeMenu}>Contact</Link>
+        <Link to="/tech" onClick={closeMenu}>Tech Process</Link>
+
       </nav>
 
       <div className="hamburger" onClick={toggleMenu}>
