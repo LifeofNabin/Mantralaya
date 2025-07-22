@@ -1,24 +1,159 @@
-.service-detail {
-  padding: 4rem 2rem;
-  min-height: 80vh;
-  background-color: #f4f4f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.capital-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  background: #f9f9f9;
+  padding-bottom: 2rem;
 }
 
-.service-wrapper {
+/* Hero */
+.hero-section {
+  background: linear-gradient(to right, #003366, #005580);
+  color: white;
   text-align: center;
-  max-width: 800px;
+  padding: 4rem 2rem;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
-.service-wrapper h2 {
+.hero-text h1 {
   font-size: 2.5rem;
-  color: #004d40;
+  margin-bottom: 1rem;
 }
 
-.service-wrapper p {
+.hero-text p {
   font-size: 1.2rem;
-  margin-top: 1rem;
-  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Highlights */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 3rem 1rem;
+  gap: 2rem;
+}
+
+.highlight {
+  background: white;
+  flex: 1 1 250px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.highlight:hover {
+  transform: translateY(-8px);
+  background-color: #e6f7ff;
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+}
+
+/* About Us */
+.about-us {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+}
+
+/* Services */
+.services {
+  padding: 2rem 1rem;
+  background-color: #eef6fa;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-box {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px) scale(1.02);
+  background-color: #d9f0ff;
+}
+
+.service-box h4 {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+}
+
+.service-box svg {
+  font-size: 1.5rem;
+  color: #007acc;
+}
+
+/* Why Us */
+.why-us {
+  padding: 2rem;
+  background: white;
+  margin: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.why-us ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.why-us li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.capital-footer {
+  background: #002b4d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .highlights {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
 }

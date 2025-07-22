@@ -1,13 +1,15 @@
-.services {
-  min-height: calc(100vh - 150px); /* 150px = navbar + footer height approx */
-  padding: 2rem;
-}
+/* services.css */
 
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f8f9fa;
+}
 
 .services h2 {
   font-size: 2.5rem;
-  color: #006644;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  color: #004d40;
 }
 
 .services-grid {
@@ -18,41 +20,24 @@
 }
 
 .card {
-  flex: 1 1 calc(45% - 2rem); /* Around 2 cards per row */
-  max-width: 500px;
-  min-width: 300px;
-  background: #ffffff;
-  padding: 3rem 2rem;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 280px;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #004d3a;
-  transition: transform 0.3s ease, background-color 0.3s ease;
   text-decoration: none;
+  color: #004d40;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.03);
-  background-color: #e2fff2;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .card-icon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 1rem;
 }
-
-/* Responsive: Full width on mobile */
-@media (max-width: 768px) {
-  .card {
-    flex: 1 1 100%;
-  }
-
-  .card-icon {
-    width: 60px;
-    height: 60px;
-  }
-}
-

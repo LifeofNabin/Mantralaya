@@ -1,24 +1,181 @@
-.service-detail {
-  padding: 4rem 2rem;
-  min-height: 80vh;
-  background-color: #f4f4f4;
+.creation-container {
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  padding: 0;
+  background: #f9f9fc;
+}
+
+/* HERO SECTION */
+.hero-creation {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  animation: fadeIn 1.2s ease-in;
 }
 
-.service-wrapper {
-  text-align: center;
-  max-width: 800px;
+.hero-left {
+  flex: 1;
+  animation: slideLeft 1s ease-out;
 }
 
-.service-wrapper h2 {
-  font-size: 2.5rem;
-  color: #004d40;
+.hero-left h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1e1e2f;
 }
 
-.service-wrapper p {
+.hero-left p {
   font-size: 1.2rem;
-  margin-top: 1rem;
-  color: #555;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background: #5d4fff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #3d2fff;
+}
+
+/* Animated bubble or right graphic */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  animation: slideRight 1s ease-out;
+}
+
+.animation-bubble {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #a18cd1, #fbc2eb);
+  border-radius: 50%;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Sections */
+.approach-section, .why-us-section, .cta-section {
+  padding: 60px 10%;
+  text-align: center;
+  background: #fff;
+}
+
+.services-section {
+  padding: 60px 10%;
+  background: #f2f4ff;
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.service-card span {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.why-us-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.why-us-section li {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.cta-section {
+  background: #5d4fff;
+  color: white;
+}
+
+.cta-section h2 {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: white;
+  color: #5d4fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #e0e0ff;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-creation {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    margin-top: 30px;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
