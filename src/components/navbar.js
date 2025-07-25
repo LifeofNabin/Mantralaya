@@ -13,6 +13,7 @@ export default function Navbar() {
   <Link to="/" className="logo-link" onClick={closeMenu}>
     <img src="/assets/images/logo.png" alt="Logo" className="logo-img" />
     <h1 className="logo-text">NuvyXis</h1>
+    
   </Link>
 </div>
 

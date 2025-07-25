@@ -3,7 +3,7 @@ import TeamCard from '../../components/teamcard';
 import './ourteam.css';
 
 const members = [
-  { name: 'Nabin Dhamala', title: 'FullStack Developer', image: '/assets/images/member/member1.jpeg' },
+  { name: 'Nabin Dhamala', title: 'Accountant', image: '/assets/images/member/member1.jpeg' },
   { name: 'Khakendra Baduwal', title: 'Back End Developer', image: '/assets/images/member/member3.jpeg' },
   { name: 'Mohit Khadayat', title: 'Front End Developer', image: '/assets/images/member/member2.jpeg' },
   { name: 'Dinesh Dhamala', title: 'QA Engineer', image: '/assets/images/member/member4.jpg' },
